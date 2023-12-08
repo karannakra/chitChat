@@ -5,7 +5,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": " env-cmd -f confiq/.env nodemon src/server.js",
+    "dev": "env-cmd -f .env nodemon src/server.js",
     "build": "rollup -c"
   },
   "keywords": [],
