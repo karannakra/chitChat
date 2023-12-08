@@ -5,18 +5,26 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": " env-cmd -f confiq/.env nodemon src/server.js"
+    "dev": " env-cmd -f confiq/.env nodemon src/server.js",
+    "build": "rollup -c"
   },
   "keywords": [],
   "author": "karan nakra",
   "license": "ISC",
   "dependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "bad-words": "^3.0.3",
     "express": "^4.17.1",
     "request": "^2.88.2",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0"
+    "env-cmd": "^10.1.0",
+    "rollup": "^4.7.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
