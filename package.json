@@ -2,7 +2,7 @@
   "name": "chatapp",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "./src/server.js",
   "scripts": {
     "start": "node src/server.js",
     "dev": "env-cmd -f .env nodemon src/server.js",
